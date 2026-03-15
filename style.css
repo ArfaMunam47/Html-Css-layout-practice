@@ -1,0 +1,132 @@
+:root{
+    --main-color:#ccff33;
+    --p-font:verdana;
+    --h1-color:white;
+}
+@font-face{
+    font-family:myFont;
+    src:url('font.otf')
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:  #999999;
+    margin: 0;
+    padding:0;
+}
+#main{
+    border:1px solid black;
+    width:1000px;
+    margin:0 auto;
+    
+}
+
+#header{
+    background: #990000 ;
+    margin: 0;
+    padding:10px 15px;
+    font-family:myFont;
+    font-size: 25px;
+}
+#header h1{
+
+    font-size: 35px;
+    color:var(--h1-color);
+}
+#menu{
+    background: var(--main-color);
+    
+    
+
+}
+#menu ul{
+    margin: 0;
+    padding:0;
+}
+#menu li{
+    display:inline-block;
+    padding-left: 5px;
+    
+
+}
+#menu li a{
+    display:block;
+    text-decoration: none;
+    color:black;
+    padding:10px 10px;
+    height:30px;
+    font-size: 20px;
+    
+   
+}
+#menu li a:hover{
+    color:white;
+    background:#990000;
+}
+#content{
+    background:white ;
+    width:800px;
+    min-height: 500px;
+    padding:10px;
+   box-sizing: border-box;
+   float:left;
+   font-family: var(--p-font);
+}
+#sidebar{
+    background:#6666ff;
+    width:200px;
+     min-height: 500px;
+     float:right;
+}
+#sidebar a{
+text-decoration: none;
+    color:black;
+    }
+#footer{
+    background:var(--main-color);
+    clear:both;
+    text-align: right;
+    height: 20px;
+    padding:10px 0;
+}
+@media screen and (max-width:1020px){
+    #main{
+        width:800px;
+    }
+    #content{
+        width:80%;
+    }
+    #sidebar{
+        width:19%;
+    }
+}
+@media screen and (max-width:810px){
+    #main{
+        width:500px;
+    }
+    #content{
+        width:70%;
+    }
+    #sidebar{
+        width:29%;
+    }
+}
+@media screen and (max-width:510px){
+    #main{
+        width:auto;
+    }
+    #content{
+        width:100%;
+        float:none;
+    }
+    #sidebar{
+         width:100%;
+        float:none;
+    }
+    #header{
+        padding:8px 10px;
+    }
+    #header h1{
+        font-size: 25px;
+        text-align:center;
+    }
+}
